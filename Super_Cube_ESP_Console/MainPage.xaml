@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Super_Cube_ESP_Console.MainPage"
+             xmlns:viewmodel="clr-namespace:Super_Cube_ESP_Console.ViewModel"
+             x:DataType="viewmodel:MainViewModel">
+
+    <Grid RowDefinitions=".80*, Auto, Auto, Auto, Auto, *"
+          ColumnDefinitions=".50, .50*, .50"
+          Padding="15"
+          RowSpacing="10"
+          ColumnSpacing="10"
+          >
+
+        <Image Grid.ColumnSpan="3"
+               Source="dotnet_bot.png"
+               Background="Orange">
+        </Image>
+
+        <Entry Placeholder="请输入您的账号"
+               Text="{Binding Account}"
+                Grid.Row="2"
+                Grid.Column="1"/>
+        <Entry Placeholder="请输入您的密码"
+               Text="{Binding Passwd}"
+               IsPassword="True"
+                Grid.Row="3"
+                Grid.Column="1"/>
+        <Button Text="登录"
+                Command="{Binding LoginCommand}"
+                Grid.Row="4"
+                Grid.Column="1">
+        </Button>
+    </Grid>
+</ContentPage>

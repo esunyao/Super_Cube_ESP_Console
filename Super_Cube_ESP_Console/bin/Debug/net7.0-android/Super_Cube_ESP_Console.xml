@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Super_Cube_ESP_Console</name>
+    </assembly>
+    <members>
+        <member name="T:Super_Cube_ESP_Console.ViewModel.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Super_Cube_ESP_Console.ViewModel.MainViewModel.Account">
+            <inheritdoc cref="F:Super_Cube_ESP_Console.ViewModel.MainViewModel.account"/>
+        </member>
+        <member name="P:Super_Cube_ESP_Console.ViewModel.MainViewModel.Passwd">
+            <inheritdoc cref="F:Super_Cube_ESP_Console.ViewModel.MainViewModel.passwd"/>
+        </member>
+        <member name="F:Super_Cube_ESP_Console.ViewModel.MainViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:Super_Cube_ESP_Console.ViewModel.MainViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:Super_Cube_ESP_Console.ViewModel.MainViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Super_Cube_ESP_Console.ViewModel.MainViewModel.Login"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Account">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Account" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Passwd">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Passwd" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Account">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Account" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Passwd">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Passwd" generated properties.</summary>
+        </member>
+    </members>
+</doc>
