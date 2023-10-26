@@ -8,6 +8,7 @@ namespace Super_Cube_ESP_Console;
 public static class MauiProgram
 {
     public static https_handler matcher;
+    public static string token;
 
     public static MauiApp CreateMauiApp()
     {
