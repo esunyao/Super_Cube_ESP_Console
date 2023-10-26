@@ -30,7 +30,17 @@ public partial class MainViewModel : ObservableObject
             ["account"] = account,
             ["password"] = utils.encryption.MD5_Encrypte(passwd)
         });
-        Console.WriteLine(account);
+        JsonElement doc_root = doc.RootElement;
+        if (doc_root.TryGetProperty("data", out JsonElement value))
+        {
+            JsonDocument data = JsonDocument.Parse(value.GetString());
+            JsonElement data_root = data.RootElement;
+            if (data_root.TryGetProperty("token", out JsonElement val))
+            {
+                Console.WriteLine(val.GetString()); // Output: value
+                await Shell.Current.GoToAsync(nameof(MainConsolePage));
+            }
+        }
     }
 }
 
