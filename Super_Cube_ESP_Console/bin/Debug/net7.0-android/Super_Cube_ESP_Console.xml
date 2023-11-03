@@ -4,6 +4,15 @@
         <name>Super_Cube_ESP_Console</name>
     </assembly>
     <members>
+        <member name="T:Super_Cube_ESP_Console.ViewModel.MainConsoleViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:Super_Cube_ESP_Console.ViewModel.MainConsoleViewModel.startSportsCommand">
+            <summary>The backing field for <see cref="P:Super_Cube_ESP_Console.ViewModel.MainConsoleViewModel.StartSportsCommand"/>.</summary>
+        </member>
+        <member name="P:Super_Cube_ESP_Console.ViewModel.MainConsoleViewModel.StartSportsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Super_Cube_ESP_Console.ViewModel.MainConsoleViewModel.StartSports"/>.</summary>
+        </member>
         <member name="T:Super_Cube_ESP_Console.ViewModel.MainViewModel">
             <inheritdoc/>
             <inheritdoc/>

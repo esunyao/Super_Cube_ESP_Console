@@ -27,8 +27,11 @@ public static class MauiProgram
         builder.Services.AddSingleton<MainViewModel>();
 
         // AddTransient保留旧的
-        builder.Services.AddTransient<MainConsolePage>();
-        builder.Services.AddTransient<MainConsoleViewModel>();
+        builder.Services.AddSingleton<MainConsolePage>();
+        builder.Services.AddSingleton<MainConsoleViewModel>();
+        
+        builder.Services.AddSingleton<TestMainPage>();
+        builder.Services.AddSingleton<TestMainPageViewModel>();
 
 #if DEBUG
         builder.Logging.AddDebug();

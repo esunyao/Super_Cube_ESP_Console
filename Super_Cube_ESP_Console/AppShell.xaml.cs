@@ -8,5 +8,6 @@ public partial class AppShell : Shell
 
         // 导航
         Routing.RegisterRoute(nameof(MainConsolePage), typeof(MainConsolePage));
+        Routing.RegisterRoute(nameof(TestMainPage), typeof(TestMainPage));
     }
 }

@@ -25,12 +25,14 @@ public partial class MainViewModel : ObservableObject
     {
         var mainView = new MainView();
         MauiProgram.matcher.RegisterHandlers(mainView);
+        await Shell.Current.GoToAsync(nameof(MainConsolePage));
         JsonDocument doc = await HttpsRequest.SendPostRequest("https://localhost:8081/api/v1/login", new JsonObject
         {
             ["account"] = account,
             ["password"] = utils.encryption.MD5_Encrypte(passwd)
         });
         JsonElement doc_root = doc.RootElement;
+        
         if (doc_root.TryGetProperty("data", out JsonElement value))
         {
             JsonDocument data = JsonDocument.Parse(value.GetString());

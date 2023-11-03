@@ -1,12 +1,67 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Super_Cube_ESP_Console.MainConsolePage"
-             Title="MainConsolePage">
-    <VerticalStackLayout>
+             Title="健运通"
+             xmlns:viewmodel="clr-namespace:Super_Cube_ESP_Console.ViewModel"
+             x:DataType="viewmodel:MainConsoleViewModel">
+    <!--<VerticalStackLayout>
+
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+    </VerticalStackLayout>-->
+
+    <!-- <Grid> -->
+    <!--     <Grid.Padding>30</Grid.Padding> -->
+    <!--     <Grid.RowDefinitions> -->
+    <!--         <RowDefinition Height="Auto" /> -->
+    <!--     </Grid.RowDefinitions> -->
+    <!--     <Grid.ColumnDefinitions> -->
+    <!--         <ColumnDefinition Width="Auto" /> -->
+    <!--         <ColumnDefinition Width="2*" /> -->
+    <!--         <ColumnDefinition Width=".009*" /> -->
+    <!--         <ColumnDefinition Width=".099*" /> -->
+    <!--     </Grid.ColumnDefinitions> -->
+    <!--      -->
+    <!--     <ImageButton Source="home_button.png" -->
+    <!--                  Grid.Row="1" -->
+    <!--                  Grid.Column="1" /> -->
+    <!--     <ImageButton Source="result_button.png" -->
+    <!--          Grid.Row="1" -->
+    <!--          Grid.Column="2" -->
+    <!--          Background="transparent" /> -->
+    <!-- </Grid> -->
+
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions=".08*,.07*,.07*,.07*,*"
+              ColumnSpacing="5">
+              <!-- Margin="0,-50,0,0"> -->
+            <ImageButton
+                Source="home_button.png"
+                Grid.Column="0">
+            </ImageButton>
+            <ImageButton Source="result_button.png" Grid.Column="1"></ImageButton>
+            <ImageButton Source="setting_button.png" Grid.Column="2"></ImageButton>
+            <ImageButton Source="user_button.png" Grid.Column="3"></ImageButton>
+        </Grid>
+        <Grid ColumnDefinitions="*, Auto, Auto, Auto, Auto, *"
+              ColumnSpacing="5">
+            <ImageButton Source="apparatus_choice_button1.png" Grid.Column="1" Pressed="OnButtonPressed" Released="OnButtonReleased"></ImageButton>
+            <ImageButton Source="apparatus_choice_button2.png" Grid.Column="2" Pressed="OnButtonPressed" Released="OnButtonReleased"></ImageButton>
+            <ImageButton Source="apparatus_choice_button3.png" Grid.Column="3" Pressed="OnButtonPressed" Released="OnButtonReleased"></ImageButton>
+            <ImageButton Source="apparatus_choice_button4.png" Grid.Column="4" Pressed="OnButtonPressed" Released="OnButtonReleased"></ImageButton>
+        </Grid>
+        <Grid ColumnDefinitions="*, Auto, *"
+              RowDefinitions="40, Auto"
+              ColumnSpacing="5">
+            <Button Text="开始运动"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Command="{Binding StartSportsCommand}"></Button>
+        </Grid>
     </VerticalStackLayout>
+
 </ContentPage>

@@ -45,3 +45,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Super_Cube_ESP_Console.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[F:/Super_Cube_ESP_Console/Super_Cube_ESP_Console/TestMainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Super_Cube_ESP_Console.TestMainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = TestMainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = TestMainPage.xaml
